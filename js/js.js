@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-console.log('oiii');
+/* console.log('oiii');
 
 const btns = document.getElementsByClassName('btn-aside');
 const sections = document.getElementsByClassName('el-section');
@@ -57,4 +57,4 @@ currentSections.forEach((el) => {
 if (el.id !== '0') {
   el.style.display = 'none';
 }
-});
+}); */
