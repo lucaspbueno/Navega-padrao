@@ -1,0 +1,307 @@
+.capa-sobre{
+    background-image: url('../assets/img/fundo2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 44rem;
+    margin-top: 8rem;
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo-navega-capa{
+            width: 53.1rem;
+            height: 24.7rem;
+            margin-top: 6.073rem;
+        }
+        .title-capa{
+            color: #ffff;
+            font-size: 2.7rem;
+            opacity: 0.65;
+            margin-top: 7.2rem;
+        }
+    }
+}
+
+@media(max-width: 428px){
+    .capa-sobre{
+        .container{
+            .logo-navega-capa{
+                width: 44rem;
+            }
+        }
+    }
+}
+
+.conteudo-sobre{
+    margin-top: 7.3rem;
+    .container{
+        .text-sobre{
+            font-size: 2.3rem;
+            text-align: center;
+            p{
+                margin-bottom: 2.8rem;
+                strong{
+                    font-size: 2.6rem;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.mvv-navega{
+    margin-top: 7.3rem;
+    .conteudo-mvv{
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 2.9rem;
+            .missao{
+                position: relative;
+                background-color: #F3A11E;
+                border-radius: 1.4rem;
+                padding: 3.7rem 4.2rem 3.1rem 3.9rem;
+                h3{
+                    color: #FFFFFF;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 80px;
+                        height: 3px;
+                        background-color: #0E142F;
+                        top: 10.7rem;
+                        left: 3.9rem;
+                    }
+                }
+                p{
+                    font-size: 1.7rem;
+                    color: #FFFFFF;
+                    max-width: 33.8rem;
+                    margin-top: 7.5rem;
+                }
+            }
+            .visao{
+                position: relative;
+                background-color: #F3A11E;
+                border-radius: 1.4rem;
+                padding: 3.7rem 3.4rem 3.3rem 3.9rem;
+                // margin: 0 29px 0 29px;
+                h3{
+                    color: #FFFFFF;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 80px;
+                        height: 3px;
+                        background-color: #0E142F;
+                        top: 10.7rem;
+                        left: 3.9rem;
+                    }
+                }
+                p{
+                    font-size: 1.7rem;
+                    color: #FFFFFF;
+                    max-width: 28.7rem;
+                    margin-top: 7.5rem;
+                }
+            }
+            .valores{
+                position: relative;
+                background-color: #F3A11E;
+                border-radius: 1.4rem;
+                padding: 3.7rem 11rem 3.2rem 4.2rem;
+                h3{
+                    color: #FFFFFF;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 80px;
+                        height: 3px;
+                        background-color: #0E142F;
+                        top: 10.7rem;
+                        left: 3.9rem;
+                    }
+                }
+                p{
+                    font-size: 1.7rem;
+                    color: #FFFFFF;
+                    max-width: 28.7rem;
+                    margin-top: 7.5rem;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 995px){
+        .conteudo-mvv{
+            ul{
+                flex-direction: column;
+                .missao{
+                    p{
+                        max-width: 100%;
+                        font-size: 2.4rem;
+                    }
+                }
+                .visao{
+                    p{
+                        max-width: 100%;
+                        font-size: 2.4rem;
+                    }
+                }
+                .valores{
+                    p{
+                        max-width: 100%;
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.socios{
+    margin-top: 6.1rem;
+    .title-socios{
+        h6{
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+    }
+    .adenisio{
+        display: flex;
+        margin-bottom: 7rem;
+        img{
+            height: 34.7rem;
+            margin-right: 3rem;
+            margin-top: 2rem;
+        }
+        .bio-adenisio{
+            background-color: #F1F1F1;
+            border-radius: 2.2rem;
+            padding: 4rem 4.3rem 4.3rem 4.7rem;
+            h5{
+                margin-bottom: 2.4rem;
+            }
+            p{
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+            }
+            ul{
+                font-size: 1.6rem;
+                li{
+                    margin-bottom: 2rem;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .carlos{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 7.6rem;
+        img{
+            height: 34.7rem;
+            margin-left: 2rem;
+            margin-top: 2rem;
+        }
+        .bio-carlos{
+            background-color: #F1F1F1;
+            border-radius: 2.2rem;
+            padding: 4rem 11rem 4rem 4.8rem;
+            h5{
+                margin-bottom: 2.4rem;
+            }
+            p{
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+            }
+            ul{
+                font-size: 1.6rem;
+                li{
+                    margin-bottom: 2rem;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 990px){
+        .adenisio{
+            flex-direction: column;
+            align-items: center;
+            img{
+                margin: 0;
+                margin-bottom: 3rem;
+                width: 53rem;
+                height: 53rem;
+            }
+            .bio-adenisio{
+                h5{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 2.5rem;
+                }
+                ul{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .carlos{
+            flex-direction: column;
+            align-items: center;
+            img{
+                margin: 0;
+                margin-bottom: 3rem;
+                width: 53rem;
+                height: 53rem;
+            }
+            .bio-carlos{
+                h5{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 2.5rem;
+                }
+                ul{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 393px){
+        .adenisio{
+            img{
+                width: 40rem;
+                height: 40rem;
+            }
+        }
+        .carlos{
+            img{
+                width: 40rem;
+                height: 40rem;
+            }
+            .bio-carlos{
+                padding: 4rem 1rem 4rem 4.8rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 414px){
+    .socios{
+        .carlos{
+            .bio-carlos{
+                padding: 4rem 1rem 4rem 4.8rem;
+            }
+        }
+    }
+}

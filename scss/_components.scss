@@ -1,0 +1,218 @@
+// TÍTULOS
+h1{
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+h2{
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+h4{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+h5{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 2.3rem;
+}
+
+// ACTIVE
+
+.nav-links{
+    .active{
+        a{
+            border-bottom: 4px solid #F3A11E;
+            padding-bottom: 0.3rem;
+        }
+    }
+}
+
+// DESTAQUES
+
+.destaque{
+    color: #030c2c;
+}
+
+.azul{
+    a{
+        color: #030c2c;
+    }
+}
+
+
+// BOTÕES
+
+.btn-contato{
+    padding: 1rem 1.6rem;
+    border-radius: 2.2rem;
+    color: #ffffff !important;
+    font-weight: 600    ;
+    font-size: 1.6rem;
+    background-color: #F3A11E;
+    transition: .2s;
+    &:hover{
+        background: #d38201;
+    }
+    i{
+        color: #000000;
+        margin-left: 0.7rem;
+    }
+}
+
+.btn-sistema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28.3rem;
+    padding: 10px 22px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 600;
+    background: #F3A11E;
+    border-radius: 2.2rem;
+    transition: .2s;
+    &:hover{
+        background: #d38201;
+    }
+    img{
+        width: 48px;
+        height: 7px;
+        margin-left: 0.9rem;
+        margin-bottom: 1px;
+    }
+}
+
+// Botão WhatsApp
+
+.btn-whatsapp{
+    position: fixed;
+    right: 5rem;
+    bottom: 5.6rem;
+}
+
+.btn-whatsapp-mobile{
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    display: none;
+}
+
+// Pop-up de Termos de Uso e Política de Privacidade
+
+.lgpd{
+    position: fixed;
+    left: 2rem;
+    right: 2rem;
+    bottom: 5rem;
+    padding: 2rem;
+    max-width: 85%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0px 15px 11px -4px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    border: 1px solid #d38201;
+    .lgpd-conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .lgpd-left{
+            p{
+                color: #030c2c;
+                font-size: 1.3rem;
+                line-height: 150%;
+                margin-right: 5rem;
+                a{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #030c2c;
+                    &:hover{
+                        border-bottom: 1px solid #030c2c;
+                    }
+                }
+            }
+        }
+        .lgpd-right{
+            background-color: #F3A11E;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            button{
+                font-weight: 600;
+                color: #ffffff;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 610px){
+    .lgpd{
+        max-width: 100%;
+        .lgpd-conteudo{
+            flex-direction: column;
+            .lgpd-left{
+                p{
+                    margin-right: 0;
+                    text-align: justify;
+                }
+            }
+            .lgpd-right{
+                margin-top: 2rem;
+                width: 100%;
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .btn-whatsapp{
+        display: none;
+    }
+
+    .btn-whatsapp-mobile{
+        display: block;
+        right: 1rem;
+    }
+}
+
+@media(max-width: 640px){
+    .btn-whatsapp-mobile{
+        right: 1.5rem;
+        bottom: 2.5rem;
+        width: 5rem;
+    }
+}
+
+@media(max-width: 414px){
+    .btn-whatsapp-mobile{
+        display: none;
+    }
+}
+
+// ScroolBar personalizada
+
+// ::-webkit-scrollbar{
+//     width: 0.6rem;
+// }
+
+// ::-webkit-scrollbar-thumb{
+//     width: 0.1rem;
+//     background-color: rgba(14, 20, 47, 0.623);
+//     border-radius: 2rem;
+// }

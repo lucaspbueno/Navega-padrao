@@ -1,0 +1,116 @@
+header{
+    height: 7.8rem;
+    position: fixed;
+    z-index: 2023;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+    }
+    .logo-navega{
+        width: 10.5rem;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            margin-right: 4.2rem;
+            a{
+                font-size: 1.4rem;
+                color: #0E142F;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .button-mobile{
+        display: none;
+    }
+
+    @media(max-width: 800px){
+        .nav-links{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 5rem;
+            position: absolute;
+            left: -398px;
+            top: 11rem;
+            background-color: #032d67;
+            height: 100vh;
+            width: 50%;
+            transition: ease-in-out .3s;
+            li{
+                margin-right: 0;
+                margin-bottom: 5rem;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    color: #ffff;
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .button-mobile{
+            display: block;
+        }
+
+        .nav-links.js-menu{
+            left: 0;
+            transition: ease-in-out .3s;
+        }
+    }
+
+    @media(max-width: 516px){
+        .nav-links{
+            li{
+                a{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 414px){
+        
+        .nav-links{
+            width: 90%;
+        }
+    }
+}
+
+
+
+@media(max-width: 800px){
+    header{
+        height: 10.8rem;
+        .container{
+            padding: 1.4rem 1.4rem;
+            .logo-navega{
+                width: 15.5rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px){
+    header{
+        .container{
+            .logo-navega{
+                width: 13.5rem;
+            }
+        }
+    }
+}
