@@ -1132,6 +1132,18 @@ html {
   width: 40%;
 }
 
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
