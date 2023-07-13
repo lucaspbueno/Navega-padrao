@@ -1100,32 +1100,8 @@ html {
   margin-top: 2rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-96 {
-  margin-right: 24rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.ml-80 {
-  margin-left: 20rem;
-}
-
-.ml-60 {
-  margin-left: 15rem;
-}
-
-.mr-60 {
-  margin-right: 15rem;
 }
 
 .flex {
@@ -1136,8 +1112,8 @@ html {
   height: 100vh;
 }
 
-.w-2\/6 {
-  width: 33.333333%;
+.w-2\/5 {
+  width: 40%;
 }
 
 .w-full {
@@ -1146,14 +1122,6 @@ html {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
 }
 
 .min-w-max {
