@@ -1100,6 +1100,10 @@ html {
   margin-top: 2rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1108,12 +1112,8 @@ html {
   height: 100vh;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
-.w-1\/4 {
-  width: 25%;
+.w-2\/5 {
+  width: 40%;
 }
 
 .w-full {
@@ -1124,33 +1124,9 @@ html {
   width: 100vw;
 }
 
-.w-2\/6 {
-  width: 33.333333%;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
-}
-
-.w-1\/5 {
-  width: 20%;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .overflow-y-auto {
@@ -1165,6 +1141,11 @@ html {
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#00142F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 20 47 / var(--tw-bg-opacity));
 }
 
 .p-8 {
