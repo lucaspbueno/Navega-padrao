@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="PT-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/documentacao.css">
     <link href="Css/tailwind.css" rel="stylesheet">
+    <link href="Css/incluirEditar.css" rel="stylesheet">
     
     <!-- Primary Meta Tags -->
     <title>Navega Consultoria – Consultoria em Cooperativas de Crédito</title>
@@ -33,244 +34,279 @@
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>    
-        <div class="container">
-            <!-- logo -->
-            <div class="logo-navega">
-                <a href="/index.html"><img src="/assets/img/logo-azul.svg" alt="Logo Navega"></a>
+  <!-- Cabeçalho -->
+  <header>    
+      <div class="container">
+          <!-- logo -->
+          <div class="logo-navega">
+              <a href="/index.html"><img src="/assets/img/logo-azul.svg" alt="Logo Navega"></a>
+          </div>
+          <!-- links menu -->
+          <nav>
+              <ul class="nav-links">
+                  <li><a href="/index.html">INÍCIO</a></li>
+                  <li><a href="/sistema.html">CONHEÇA O SISTEMA</a></li>
+                  <li><a href="/institucional.html">INSTITUCIONAL</a></li>
+                  <li><a href="/sobre-nos.html">SOBRE NÓS</a></li>
+                  <li class="active"><a href="documentacao.html">DOCUMENTAÇÃO</a></li>
+                  <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank" class="btn-contato">CONTATO<i class="bi bi-whatsapp"></i></a></li>
+              </ul>
+              
+              <!-- mobile button -->
+              <button class="button-mobile" onclick="openMenu()">
+                  <img src="/assets/img/menu.png" alt="botão menu mobile">
+              </button>
+
+          </nav>
+      </div>
+  </header>
+
+  <main class="flex w-screen mt-28">
+    <aside class=" w-2/5 p-8 bg-[#00142F] text-white overflow-y-auto">
+      <ul class="menu text-3xl">
+        
+        <li>
+          <details>
+            <summary>
+              <a class="btn-aside" id="0">Gestão</a>
+            </summary>
+            <ul>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Painel gerencial</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="painelDoGerente.html" class="btn-aside" id="1">Painel do gerente</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">CRM</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="painelDeAtendimentoCRM.html" class="btn-aside" id="2">Painel de atendimento CRM</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Agenda</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="manutencaoDaAgenda.html" class="btn-aside" id="3">Manutenção da Agenda</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Sistemas de Senhas</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="painelDeSenhas.html" class="btn-aside" id="4">Painel de Senhas</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Fluxo de Proposta de Crédito</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="painelDeFluxo.html" class="btn-aside" id="5">Painel de fluxo</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Campanhas promocionais</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="campanhas.html" class="btn-aside" id="6">Campanhas</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+            </ul>
+          </details>
+        </li>
+
+        <li class="mt-6">
+          <details open>
+            <summary>
+              <a class="btn-aside" id="0">Corporativo</a>
+            </summary>
+            <ul>
+
+              <li>
+                <details open>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Permissões de Acesso</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <details open>
+                        <summary>
+                          <a class="btn-aside">Usuários</a>
+                        </summary>
+                        <ul>
+                          <li><a href="incluirEditar.html" class="btn-aside" id="7">Incluir e Editar</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Integração de Dados</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <details>
+                        <summary>
+                          <a class="btn-aside">Importação</a>
+                        </summary>
+                        <ul>
+                          <li><a href="cancelar.html" class="btn-aside" id="8">Cancelar</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </aside>
+    <article class="w-full p-8">
+      <h1>Incluir e Editar</h1>
+
+      <section class="topics">
+        <h2>Sobre o tempo de atualização:</h2>
+        <p>Qualquer inclusão e/ou alteração de usuário somente será aplicada ao app em aproximadamente 30 minutos.</p>
+      </section>
+
+      <h2>Sobre os campos do cadastro:</h2>
+
+      <section class="topics">
+        <p><b>Login:</b> <span>(obrigatório)</span> Nome de usuário que será utilizado para acessar o Sistema. Precisa ter o mesmo padrão do Sisbr, ou seja: nome + número da cooperativa + _ + número do PA (mínimo 2 dígitos).<br>
+        <span class="ex">Exemplo:</span> MariaA123_00, onde 1234 é o número da cooperativa e 00 é o código do PA.</p>
+      </section>
+
+      <section class="topics">
+        <p><b>Número CPF:</b> <span>(obrigatório)</span> Número do CPF do usuário, somente números. Não é permitido um mesmo CPF para mais de um usuário.</p>
+      </section>
+
+      <section class="topics">
+        <p><b>Nome:</b> <span>(obrigatório)</span> Nome do usuário.</p>
+      </section>
+
+      <section class="topics">
+        <p><b>Função:</b> <span>(obrigatório)</span> Refere-se à função que o usuário ocupa na Cooperativa. Não é obrigatório, mas é utilizado em algumas funcionalidades do sistema, como a Inteligência e, se não informado, o usuário pode não receber as informações da Inteligência.</p>
+      </section>
+
+      <section class="topics">
+        <p><b>E-mail:</b> <span>(obrigatório)</span> endereço de e-mail do usuário. Por esse endereço o Sistema enviará mensagens, caso existam, como por exemplo, mensagens da Inteligência.</p>
+      </section>
+
+      <section class="topics">
+        <p><b>Código pessoa:</b> <span>(obrigatório se a função for de gerente)</span> Código do Cadastro da Pessoas no SISBR.</p>
+      </section>
+
+      <section class="topics">
+        <p><b>E-mail:</b> Setor da cooperativa no qual o usuário está alocado. Não é obrigatório, mas é utilizado no CRM.</p>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <div class="container">
+        <div class="image-footer">
+            <a href="index"><img src="/assets/img/logo-rodape.png" alt="Logo branco Navega"></a>
+        </div>
+        <div class="contato-footer">
+            <h5>Central de atendimento<br>ao cliente:</h5>
+            <div class="number-footer">
+                <a href="tel:6135505899" target="_blank"><i class="bi bi-telephone"></i> (61) 3550-5899</a> | <a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank">(38) 99152-9547 <i class="bi bi-whatsapp"></i></a><br>
+                <a href="mailto:navega@navegaconsultoria.com.br">navega@navegaconsultoria.com.br</a>
             </div>
-            <!-- links menu -->
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="/index.html">INÍCIO</a></li>
-                    <li><a href="/sistema.html">CONHEÇA O SISTEMA</a></li>
-                    <li><a href="/institucional.html">INSTITUCIONAL</a></li>
-                    <li><a href="/sobre-nos.html">SOBRE NÓS</a></li>
-                    <li class="active"><a href="documentacao.html">DOCUMENTAÇÃO</a></li>
-                    <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank" class="btn-contato">CONTATO<i class="bi bi-whatsapp"></i></a></li>
+        </div>
+        <div class="endereco-footer">
+            <div class="endereco">
+                <div class="maps">
+                    <i class="bi bi-pin-map-fill"></i>
+                </div>
+                <div class="rua">
+                    <a href="https://goo.gl/maps/NLhUu2NgvSKyewd79" target="_blank">Rua Coronel Severiano<br>nº 40 – Araguaia<br>Belo Horizonte-MG</a>
+                </div>
+            </div>
+            <div class="redes-sociais">
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/navega-sistemas/" target="_blank"><img src="/assets/img/linkedin.svg" alt="linkedin"></a></li>
+                    <li><a href="https://www.instagram.com/navegasistemas/" target="_blank"><img src="/assets/img/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/whatsapp.svg" alt="whatsapp"></a></li>
                 </ul>
-                
-                <!-- mobile button -->
-                <button class="button-mobile" onclick="openMenu()">
-                    <img src="/assets/img/menu.png" alt="botão menu mobile">
-                </button>
-
-            </nav>
+            </div>
         </div>
-    </header>
-
-    <main class="flex w-screen h-screen mt-28">
-      <aside class="h-screen w-2/5 p-8 bg-[#00142F] text-white overflow-y-auto">
-        <ul class="menu text-3xl">
-          
-          <li>
-            <details>
-              <summary>
-                <a class="btn-aside" id="0">Gestão</a>
-              </summary>
-              <ul>
-  
-                <li>
-                  <details>
-                    <summary class="mt-8">
-                      <a class="btn-aside">Painel gerencial</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <a href="painelDoGerente.html" class="btn-aside" id="1">Painel do gerente</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-                <li>
-                  <details>
-                    <summary class="mt-8">
-                      <a class="btn-aside">CRM</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <a href="painelDeAtendimentoCRM.html" class="btn-aside" id="2">Painel de atendimento CRM</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-                <li>
-                  <details>
-                    <summary class="mt-8">
-                      <a class="btn-aside">Agenda</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <a href="manutencaoDaAgenda.html" class="btn-aside" id="3">Manutenção da Agenda</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-                <li>
-                  <details>
-                    <summary class="mt-8">
-                      <a class="btn-aside">Sistemas de Senhas</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <a href="painelDeSenhas.html" class="btn-aside" id="4">Painel de Senhas</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-                <li>
-                  <details>
-                    <summary class="mt-8">
-                      <a class="btn-aside">Fluxo de Proposta de Crédito</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <a href="painelDeFluxo.html" class="btn-aside" id="5">Painel de fluxo</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-                <li>
-                  <details>
-                    <summary class="mt-8">
-                      <a class="btn-aside">Campanhas promocionais</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <a href="campanhas.html" class="btn-aside" id="6">Campanhas</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-              </ul>
-            </details>
-          </li>
-  
-          <li class="mt-6">
-            <details open>
-              <summary>
-                <a class="btn-aside" id="0">Corporativo</a>
-              </summary>
-              <ul>
-  
-                <li>
-                  <details open>
-                    <summary class="mt-8">
-                      <a class="btn-aside">Permissões de Acesso</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <details open>
-                          <summary>
-                            <a class="btn-aside">Usuários</a>
-                          </summary>
-                          <ul>
-                            <li><a href="incluirEditar.html" class="btn-aside" id="7">Incluir e Editar</a></li>
-                          </ul>
-                        </details>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-                <li>
-                  <details>
-                    <summary class="mt-8">
-                      <a class="btn-aside">Integração de Dados</a>
-                    </summary>
-                    <ul>
-                      <li>
-                        <details>
-                          <summary>
-                            <a class="btn-aside">Importação</a>
-                          </summary>
-                          <ul>
-                            <li><a href="cancelar.html" class="btn-aside" id="8">Cancelar</a></li>
-                          </ul>
-                        </details>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-  
-              </ul>
-            </details>
-          </li>
-  
-        </ul>
-      </aside>
-      <article class="bg-white w-full p-8 ">
-        <section class="el-section" id="7">
-          <h1 class="text-6xl text-black">Incluir e Editar</h1>
-        </section>
-      </article>
-    </main>
-
-    <!-- Rodapé da página -->
-    <footer>
+    </div>
+    <div class="termos-uso">
         <div class="container">
-            <div class="image-footer">
-                <a href="index"><img src="/assets/img/logo-rodape.png" alt="Logo branco Navega"></a>
-            </div>
-            <div class="contato-footer">
-                <h5>Central de atendimento<br>ao cliente:</h5>
-                <div class="number-footer">
-                    <a href="tel:6135505899" target="_blank"><i class="bi bi-telephone"></i> (61) 3550-5899</a> | <a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank">(38) 99152-9547 <i class="bi bi-whatsapp"></i></a><br>
-                    <a href="mailto:navega@navegaconsultoria.com.br">navega@navegaconsultoria.com.br</a>
-                </div>
-            </div>
-            <div class="endereco-footer">
-                <div class="endereco">
-                    <div class="maps">
-                        <i class="bi bi-pin-map-fill"></i>
-                    </div>
-                    <div class="rua">
-                        <a href="https://goo.gl/maps/NLhUu2NgvSKyewd79" target="_blank">Rua Coronel Severiano<br>nº 40 – Araguaia<br>Belo Horizonte-MG</a>
-                    </div>
-                </div>
-                <div class="redes-sociais">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/company/navega-sistemas/" target="_blank"><img src="/assets/img/linkedin.svg" alt="linkedin"></a></li>
-                        <li><a href="https://www.instagram.com/navegasistemas/" target="_blank"><img src="/assets/img/instagram.svg" alt="instagram"></a></li>
-                        <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/whatsapp.svg" alt="whatsapp"></a></li>
-                    </ul>
-                </div>
+            <div class="lista-uso">
+                <ul>
+                    <li><a href="institucional" target="_blank">Política de Privacidade</a></li>
+                    <li><a href="politica-cookies" target="_blank">Política de Cookies</a></li>
+                    <li><a href="institucional" target="_blank">Termos de Uso</a></li>
+                </ul>
             </div>
         </div>
-        <div class="termos-uso">
-            <div class="container">
-                <div class="lista-uso">
-                    <ul>
-                        <li><a href="institucional" target="_blank">Política de Privacidade</a></li>
-                        <li><a href="politica-cookies" target="_blank">Política de Cookies</a></li>
-                        <li><a href="institucional" target="_blank">Termos de Uso</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+  </footer>
+
+<!-- Rodapé diureitos reservados e Criador -->
+  <footer class="criador">
+      <div class="container">
+          <p>© 2023, Navega Sistemas e Consultoria. Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5538998706920&text&type=phone_number&app_absent=0" target="_blank">DevCreator | Tecnologia & Inovação</a></p>
+      </div>
+  </footer>
+
+  <!-- Botão whatsapp -->
+  <a class="btn-whatsapp" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/botão-whats.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
+
+  <!-- Botão Whatsapp responsivo -->
+  <a class="btn-whatsapp-mobile" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/whatsapp-mobile.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
   
-    <!-- Rodapé diureitos reservados e Criador -->
-    <footer class="criador">
-        <div class="container">
-            <p>© 2023, Navega Sistemas e Consultoria. Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5538998706920&text&type=phone_number&app_absent=0" target="_blank">DevCreator | Tecnologia & Inovação</a></p>
-        </div>
-    </footer>
-  
-    <!-- Botão whatsapp -->
-    <a class="btn-whatsapp" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/botão-whats.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
-    
-    <!-- Botão Whatsapp responsivo -->
-    <a class="btn-whatsapp-mobile" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/whatsapp-mobile.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
-    
-    <script src="/js/js.js"></script>
-  
-  </body>
-  </html>
+  <script src="/js/js.js"></script>
+
+</body>
+</html>

@@ -7,6 +7,9 @@ module.exports = {
         'other-blue': '#00142F',
       },
     },
+    daisyui: {
+      themes: ["light"],
+    },
   },
   plugins: [require("daisyui")],
 }

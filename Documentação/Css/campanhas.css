@@ -1,0 +1,32 @@
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+article h1 {
+  color: black;
+}
+
+section.topics {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.topics div h2 {
+  color: black;
+  font-weight: 500;
+}
+
+section.topics > h2:first-child {
+  display: inline;
+  margin-right: 15px;
+}
+
+
+section.topics div p  {
+  font-size: 20px;
+  font-weight: 500;
+}

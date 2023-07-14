@@ -1,0 +1,18 @@
+
+article h1, h2 {
+  color: black;
+}
+
+section.topics {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+section.topics p span {
+  color: red;
+}
+
+section.topics span.ex {
+  text-decoration: underline;
+  text-decoration-color: red;
+}

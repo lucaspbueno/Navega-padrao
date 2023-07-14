@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="PT-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/documentacao.css">
     <link href="Css/tailwind.css" rel="stylesheet">
+    <link href="Css/manutencaoDaAgenda.css" rel="stylesheet">
     
     <!-- Primary Meta Tags -->
     <title>Navega Consultoria – Consultoria em Cooperativas de Crédito</title>
@@ -206,9 +207,52 @@
   
         </ul>
       </aside>
-      <article class="bg-white w-full p-8 ">
-        <section class="el-section" id="3">
-          <h1 class="text-6xl text-black">Manutenção da Agenda</h1>
+      <article class="w-full p-8 ">
+        <h1>Manutenção da Agenda</h1>
+
+        <section class="header">
+          <h2>Ajuda?</h2>
+          <h3>Referente ao relarório extraído através do caminho: Exportar -> Excel</h3>
+          <p>Descrição das Colunas:</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Reagendado:</span> Não gera nova agenda (novo número), apenas adia uma visita que ainda não aconteceu. Quando "Sim" significa que a primeira data definida para a visita foi alterada para a data que está no campo Data da Visita;</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Agenda Anterior:</span> quando informado, significa que agenda em questão foi originada da agenda cujo número consta no campo "Agenda anterior".</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Data do Cadastro da Agenda:</span> data em que a agenda foi gerada no Sistema.</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Data da visita:</span> data em que a agenda/anotação deverá ser encerrada.</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Check:</span> informado caso o usuário realize check in no início da visita e check out no final. Funcionalidade não disponível para tipo de contato "Anotação".</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Data da Última Consulta:</span> Será sempre a mesma data da coluna "Data de Encerramento" quando a consulta se tratar de agendas encerradas.</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Nova Visita:</span> quando "sim" foi gerada uma nova agenda, contudo se estiver com Situação agendada ou cancelada não aparecerá na lista de encerradas.</p>
+        </section>
+
+        <section class="topics">
+          <p><span>- Data de Encerramento:</span> nas agendas com "Situação Agendado ou Cancelado" este campo estará sempre em branco e o usuário deve atentar para o campo "Última Situação".</p>
+        </section>
+
+        <section class="comments">
+          <h4>Observações:</h4>
+          <ol>
+            <li>1- Caso ainda apareça agendas para ex-gerentes as mesmas deverão ser selecionadas e CANCELADAS manualmente.</li>
+          </ol>
         </section>
       </article>
     </main>

@@ -1,0 +1,27 @@
+article h1 {
+  color: black;
+}
+
+section {
+  margin-top: 10px;
+  color: black;
+}
+
+section:first-of-type h2 {
+  color: blue;
+  /* Estilos para o primeiro h2 dentro da classe section */
+}
+
+section:nth-of-type(2) h2 {
+  color: orange;
+  /* Estilos para o segundo h2 dentro da classe section */
+}
+
+section:nth-of-type(3) h2 {
+  color: red;
+  /* Estilos para o segundo h2 dentro da classe section */
+}
+
+section p {
+  font-size: 22px;
+}

@@ -1,0 +1,39 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article h1 {
+  color: black;
+}
+
+section.header {
+  color: black;
+}
+
+section.header p {
+  font-size: 18px;
+  color: black;
+}
+
+section.header h3 {
+  font-size: 20px;
+  color: black;
+}
+
+section.topics {
+  margin-top: 10px;
+  color: black;
+  font-size: 16px;
+}
+
+section.topics p span {
+  font-weight: bold;
+}
+
+section.comments h4 {
+  color: blue;
+}
+section.comments ol li {
+  font-size: 15px;
+}

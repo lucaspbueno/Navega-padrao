@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="PT-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/documentacao.css">
     <link href="Css/tailwind.css" rel="stylesheet">
+    <link href="Css/cancelar.css" rel="stylesheet">
     
     <!-- Primary Meta Tags -->
     <title>Navega Consultoria – Consultoria em Cooperativas de Crédito</title>
@@ -60,8 +61,8 @@
         </div>
     </header>
 
-    <main class="flex w-screen h-screen mt-28">
-      <aside class="h-screen w-2/5 p-8 bg-[#00142F] text-white overflow-y-auto">
+    <main class="flex w-screen mt-28">
+      <aside class="w-2/5 p-8 bg-[#00142F] text-white overflow-y-auto">
         <ul class="menu text-3xl">
           
           <li>
@@ -206,11 +207,71 @@
   
         </ul>
       </aside>
-      <article class="bg-white w-full p-8 ">
-        <section class="el-section" id="8">
-          <h1 class="text-6xl text-black">Cancelar</h1>
-        </section>
+      <article class="w-full p-8">
+        <h1 class="text-6xl text-black">Cancelar</h1>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Coluna</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origem arquivo</td>
+              <td>Indica em qual Sistema o arquivo é gerado.</td>
+            </tr>
+            <tr>
+              <td>Obrigatoriedade</td>
+              <td>Arquivos OBRIGATÓRIOS são necessários para o cálculo diário. Arquivos IMPORTANTES são utilizados em outras funcionalidades do sistema.</td>
+            </tr>
+            <tr>
+              <td>Situação importação</td>
+              <td>ATUALIZADO: arquivo já foi importado corretamente hoje | ATRASADO: arquivo diário: não foi importado há, pelo menos, 1 dia. Mensal: não importado há 1 mês | IMPORTANDO: arquivo está sendo importado para o Navega | AGUARDANDO: arquivo está na.</td>
+            </tr>
+            <tr>
+              <td>Periodicidade importação</td>
+              <td>Período de tempo em que o arquivo deve ser importado: diário, mensal ou eventual (somente em caso de necessidade).</td>
+            </tr>
+            <tr>
+              <td>Descrição do arquivo</td>
+              <td>Descrição do que se refere o arquivo.</td>
+            </tr>
+            <tr>
+              <td>Nome padrão do arquivo</td>
+              <td>Nome do arquivo para tratamento do Navega.</td>
+            </tr>
+            <tr>
+              <td>Tipo entrada</td>
+              <td>Forma como o arquivo entrou no Navega: MANUAL: importado pela tela do Navega manualmente | PASTA: colocado na pasta compartilhada.</td>
+            </tr>
+            <tr>
+              <td>Arquivo importado</td>
+              <td>Nome do arquivo importado pelo Navega, considerando que, quando a importação é manual, não é obrigatório utilizar o nome padrão.</td>
+            </tr>
+            <tr>
+              <td>Início da importação</td>
+              <td>Data e hora que o Navega iniciou a importação do arquivo (processamento) e não a hora que foi colocado na pasta.</td>
+            </tr>
+            <tr>
+              <td>Fim da importação</td>
+              <td>Data e hora que a importação do arquivo foi concluída.</td>
+            </tr>
+            <tr>
+              <td>Tempo gasto</td>
+              <td>Tempo gasto na importação do arquivo do início ao fim.</td>
+            </tr>
+            <tr>
+              <td>Data de referência</td>
+              <td>Maior data de referência dos dados contidos no arquivo. No caso das tabelas que contém saldos e valores, se refere à data dos saldos ou data de movimento.</td>
+            </tr>
+          </tbody>
+        </table>
+
+
       </article>
+
     </main>
 
     <!-- Rodapé da página -->
