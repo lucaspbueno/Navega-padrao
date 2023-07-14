@@ -32,29 +32,3 @@ window.addEventListener('DOMContentLoaded', function() {
     document.getElementById('balloon').style.display = 'none';
   }
 });
-
-/* console.log('oiii');
-
-const btns = document.getElementsByClassName('btn-aside');
-const sections = document.getElementsByClassName('el-section');
-const currentBtns = [...btns];
-const currentSections = [...sections];
-
-
-const handleClick = (e) => {
-e.preventDefault();
-const url = e.target.getAttribute('href');
-window.history.pushState(null, '', url);
-const id = e.target.getAttribute('id');
-const showSection = currentSections.find((el) => el.id.includes(id));
-const hiddenSection = currentSections.filter((el) => !el.id.includes(id));
-showSection.style.display = 'flex'
-hiddenSection.forEach((el) => el.style.display = 'none');
-};
-
-currentBtns.map((el) => el.addEventListener('click', handleClick));
-currentSections.forEach((el) => {
-if (el.id !== '0') {
-  el.style.display = 'none';
-}
-}); */
