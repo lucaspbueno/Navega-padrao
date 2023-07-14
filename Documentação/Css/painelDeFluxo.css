@@ -2,6 +2,10 @@ article h1 {
   color: black
 }
 
+section.topics {
+  margin-top: 10px;
+}
+
 section.topics h2 {
   font-size: 30px;
 }
