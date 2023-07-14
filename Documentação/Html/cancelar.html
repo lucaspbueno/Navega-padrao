@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="PT-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/web-site/assets/img/favicon-navega.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Css/documentacao.css">
+    <link href="../Css/tailwind.css" rel="stylesheet">
+    <link href="../Css/cancelar.css" rel="stylesheet">
+    
+    <!-- Primary Meta Tags -->
+    <title>Navega Consultoria – Consultoria em Cooperativas de Crédito</title>
+    <meta name="title" content="Navega Consultoria – Consultoria em Cooperativas de Crédito">
+    <meta name="description" content="Criado para Atender a Sua Cooperativa, A NAVEGA é uma empresa de tecnologia que há mais de 10 anos se especializou em otimizar processos/rotinas operacionais em cooperativas de crédito. Com escritórios em Brasília-DF e Belo Horizonte-MG, atua sob demanda em todo território nacional. Nosso diferencial é a capacidade de customizar (automatizar) projetos e processos locais.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://navegaconsultoria.com.br/">
+    <meta property="og:title" content="Navega Consultoria – Consultoria em Cooperativas de Crédito">
+    <meta property="og:description" content="Criado para Atender a Sua Cooperativa, A NAVEGA é uma empresa de tecnologia que há mais de 10 anos se especializou em otimizar processos/rotinas operacionais em cooperativas de crédito. Com escritórios em Brasília-DF e Belo Horizonte-MG, atua sob demanda em todo território nacional. Nosso diferencial é a capacidade de customizar (automatizar) projetos e processos locais.">
+    <meta property="og:image" content="http://navegaconsultoria.com.br/share.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://navegaconsultoria.com.br/">
+    <meta property="twitter:title" content="Navega Consultoria – Consultoria em Cooperativas de Crédito">
+    <meta property="twitter:description" content="Criado para Atender a Sua Cooperativa, A NAVEGA é uma empresa de tecnologia que há mais de 10 anos se especializou em otimizar processos/rotinas operacionais em cooperativas de crédito. Com escritórios em Brasília-DF e Belo Horizonte-MG, atua sob demanda em todo território nacional. Nosso diferencial é a capacidade de customizar (automatizar) projetos e processos locais.">
+    <meta property="twitter:image" content="http://navegaconsultoria.com.br/share.jpg">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>    
+      <div class="container">
+          <!-- logo -->
+          <div class="logo-navega">
+              <a href="/index.html"><img src="/web-site/assets/img/logo-azul.svg" alt="Logo Navega"></a>
+          </div>
+          <!-- links menu -->
+          <nav>
+              <ul class="nav-links">
+                  <li><a href="/web-site/index.html">INÍCIO</a></li>
+                  <li><a href="/web-site/sistema.html">CONHEÇA O SISTEMA</a></li>
+                  <li><a href="/web-site/institucional.html">INSTITUCIONAL</a></li>
+                  <li><a href="/web-site/sobre-nos.html">SOBRE NÓS</a></li>
+                  <li class="active"><a href="documentacao.html">DOCUMENTAÇÃO</a></li>
+                  <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank" class="btn-contato">CONTATO<i class="bi bi-whatsapp"></i></a></li>
+              </ul>
+              
+              <!-- mobile button -->
+              <button class="button-mobile" onclick="openMenu()">
+                  <img src="/web-site/assets/img/menu.png" alt="botão menu mobile">
+              </button>
+
+          </nav>
+      </div>
+  </header>
+
+  <main class="flex w-screen mt-28">
+    <aside class="w-2/5 p-8 bg-[#00142F] text-white overflow-y-auto">
+      <ul class="menu text-3xl">
+        
+        <li>
+          <details>
+            <summary>
+              <a class="btn-aside" id="0">Gestão</a>
+            </summary>
+            <ul>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a>Painel gerencial</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <details>
+                        <summary>
+                          <a>Painel do gerente</a>
+                        </summary>
+                        <ul>
+                          <li><a href="contatosRealizadosNoMes.html" id="7">Contatos realizados no mês</a></li>
+                          <li><a href="meusNumeros.html">Meus números</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">CRM</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="painelDeAtendimentoCRM.html" class="btn-aside" id="2">Painel de atendimento CRM</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Agenda</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="manutencaoDaAgenda.html" class="btn-aside" id="3">Manutenção da Agenda</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Sistemas de Senhas</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="painelDeSenhas.html" class="btn-aside" id="4">Painel de Senhas</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Fluxo de Proposta de Crédito</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="painelDeFluxo.html" class="btn-aside" id="5">Painel de fluxo</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Campanhas promocionais</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <a href="campanhas.html" class="btn-aside" id="6">Campanhas</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+            </ul>
+          </details>
+        </li>
+
+        <li class="mt-6">
+          <details open>
+            <summary>
+              <a class="btn-aside" id="0">Corporativo</a>
+            </summary>
+            <ul>
+
+              <li>
+                <details>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Permissões de Acesso</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <details>
+                        <summary>
+                          <a class="btn-aside">Usuários</a>
+                        </summary>
+                        <ul>
+                          <li><a href="incluirEditar.html" class="btn-aside" id="7">Incluir e Editar</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <details open>
+                  <summary class="mt-8">
+                    <a class="btn-aside">Integração de Dados</a>
+                  </summary>
+                  <ul>
+                    <li>
+                      <details open>
+                        <summary>
+                          <a class="btn-aside">Importação</a>
+                        </summary>
+                        <ul>
+                          <li><a href="cancelar.html" class="btn-aside" id="8">Cancelar</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </aside>
+    <article class="w-full p-8">
+      <h1>Cancelar</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Coluna</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Origem arquivo</td>
+            <td>Indica em qual Sistema o arquivo é gerado.</td>
+          </tr>
+          <tr>
+            <td>Obrigatoriedade</td>
+            <td>Arquivos OBRIGATÓRIOS são necessários para o cálculo diário. Arquivos IMPORTANTES são utilizados em outras funcionalidades do sistema.</td>
+          </tr>
+          <tr>
+            <td>Situação importação</td>
+            <td>ATUALIZADO: arquivo já foi importado corretamente hoje | ATRASADO: arquivo diário: não foi importado há, pelo menos, 1 dia. Mensal: não importado há 1 mês | IMPORTANDO: arquivo está sendo importado para o Navega | AGUARDANDO: arquivo está na.</td>
+          </tr>
+          <tr>
+            <td>Periodicidade importação</td>
+            <td>Período de tempo em que o arquivo deve ser importado: diário, mensal ou eventual (somente em caso de necessidade).</td>
+          </tr>
+          <tr>
+            <td>Descrição do arquivo</td>
+            <td>Descrição do que se refere o arquivo.</td>
+          </tr>
+          <tr>
+            <td>Nome padrão do arquivo</td>
+            <td>Nome do arquivo para tratamento do Navega.</td>
+          </tr>
+          <tr>
+            <td>Tipo entrada</td>
+            <td>Forma como o arquivo entrou no Navega: MANUAL: importado pela tela do Navega manualmente | PASTA: colocado na pasta compartilhada.</td>
+          </tr>
+          <tr>
+            <td>Arquivo importado</td>
+            <td>Nome do arquivo importado pelo Navega, considerando que, quando a importação é manual, não é obrigatório utilizar o nome padrão.</td>
+          </tr>
+          <tr>
+            <td>Início da importação</td>
+            <td>Data e hora que o Navega iniciou a importação do arquivo (processamento) e não a hora que foi colocado na pasta.</td>
+          </tr>
+          <tr>
+            <td>Fim da importação</td>
+            <td>Data e hora que a importação do arquivo foi concluída.</td>
+          </tr>
+          <tr>
+            <td>Tempo gasto</td>
+            <td>Tempo gasto na importação do arquivo do início ao fim.</td>
+          </tr>
+          <tr>
+            <td>Data de referência</td>
+            <td>Maior data de referência dos dados contidos no arquivo. No caso das tabelas que contém saldos e valores, se refere à data dos saldos ou data de movimento.</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </article>
+
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+      <div class="container">
+          <div class="image-footer">
+              <a href="index"><img src="/web-site/assets/img/logo-rodape.png" alt="Logo branco Navega"></a>
+          </div>
+          <div class="contato-footer">
+              <h5>Central de atendimento<br>ao cliente:</h5>
+              <div class="number-footer">
+                  <a href="tel:6135505899" target="_blank"><i class="bi bi-telephone"></i> (61) 3550-5899</a> | <a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank">(38) 99152-9547 <i class="bi bi-whatsapp"></i></a><br>
+                  <a href="mailto:navega@navegaconsultoria.com.br">navega@navegaconsultoria.com.br</a>
+              </div>
+          </div>
+          <div class="endereco-footer">
+              <div class="endereco">
+                  <div class="maps">
+                      <i class="bi bi-pin-map-fill"></i>
+                  </div>
+                  <div class="rua">
+                      <a href="https://goo.gl/maps/NLhUu2NgvSKyewd79" target="_blank">Rua Coronel Severiano<br>nº 40 – Araguaia<br>Belo Horizonte-MG</a>
+                  </div>
+              </div>
+              <div class="redes-sociais">
+                  <ul>
+                      <li><a href="https://www.linkedin.com/company/navega-sistemas/" target="_blank"><img src="/web-site/assets/img/linkedin.svg" alt="linkedin"></a></li>
+                      <li><a href="https://www.instagram.com/navegasistemas/" target="_blank"><img src="/web-site/assets/img/instagram.svg" alt="instagram"></a></li>
+                      <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/web-site/assets/img/whatsapp.svg" alt="whatsapp"></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="termos-uso">
+          <div class="container">
+              <div class="lista-uso">
+                  <ul>
+                      <li><a href="institucional" target="_blank">Política de Privacidade</a></li>
+                      <li><a href="politica-cookies" target="_blank">Política de Cookies</a></li>
+                      <li><a href="institucional" target="_blank">Termos de Uso</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <!-- Rodapé diureitos reservados e Criador -->
+  <footer class="criador">
+      <div class="container">
+          <p>© 2023, Navega Sistemas e Consultoria. Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5538998706920&text&type=phone_number&app_absent=0" target="_blank">DevCreator | Tecnologia & Inovação</a></p>
+      </div>
+  </footer>
+
+  <!-- Botão whatsapp -->
+  <a class="btn-whatsapp" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/web-site/assets/img/botão-whats.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
+  
+  <!-- Botão Whatsapp responsivo -->
+  <a class="btn-whatsapp-mobile" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/web-site/assets/img/whatsapp-mobile.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
+  
+  <script src="/js/js.js"></script>
+
+</body>
+</html>

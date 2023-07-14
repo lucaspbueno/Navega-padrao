@@ -2,26 +2,27 @@ article h1 {
   color: black;
 }
 
-section {
+section.topics {
   margin-top: 10px;
   color: black;
 }
 
-section:first-of-type h2 {
+section.topics h2 {
+  font-size: 30px;
+}
+
+section.topics:first-of-type h2 {
   color: blue;
-  /* Estilos para o primeiro h2 dentro da classe section */
 }
 
-section:nth-of-type(2) h2 {
+section.topics:nth-of-type(2) h2 {
   color: orange;
-  /* Estilos para o segundo h2 dentro da classe section */
 }
 
-section:nth-of-type(3) h2 {
+section.topics:nth-of-type(3) h2 {
   color: red;
-  /* Estilos para o segundo h2 dentro da classe section */
 }
 
-section p {
-  font-size: 22px;
+section.topics p {
+  font-size: 20px;
 }

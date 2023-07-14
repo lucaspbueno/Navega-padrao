@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon-navega.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/web-site/assets/img/favicon-navega.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="Css/documentacao.css">
-    <link href="Css/tailwind.css" rel="stylesheet">
-    <link href="Css/incluirEditar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/documentacao.css">
+    <link href="../Css/tailwind.css" rel="stylesheet">
+    <link href="../Css/incluirEditar.css" rel="stylesheet">
     
     <!-- Primary Meta Tags -->
     <title>Navega Consultoria – Consultoria em Cooperativas de Crédito</title>
@@ -39,22 +39,22 @@
       <div class="container">
           <!-- logo -->
           <div class="logo-navega">
-              <a href="/index.html"><img src="/assets/img/logo-azul.svg" alt="Logo Navega"></a>
+              <a href="/index.html"><img src="/web-site/assets/img/logo-azul.svg" alt="Logo Navega"></a>
           </div>
           <!-- links menu -->
           <nav>
               <ul class="nav-links">
-                  <li><a href="/index.html">INÍCIO</a></li>
-                  <li><a href="/sistema.html">CONHEÇA O SISTEMA</a></li>
-                  <li><a href="/institucional.html">INSTITUCIONAL</a></li>
-                  <li><a href="/sobre-nos.html">SOBRE NÓS</a></li>
+                  <li><a href="/web-site/index.html">INÍCIO</a></li>
+                  <li><a href="/web-site/sistema.html">CONHEÇA O SISTEMA</a></li>
+                  <li><a href="/web-site/institucional.html">INSTITUCIONAL</a></li>
+                  <li><a href="/web-site/sobre-nos.html">SOBRE NÓS</a></li>
                   <li class="active"><a href="documentacao.html">DOCUMENTAÇÃO</a></li>
                   <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank" class="btn-contato">CONTATO<i class="bi bi-whatsapp"></i></a></li>
               </ul>
               
               <!-- mobile button -->
               <button class="button-mobile" onclick="openMenu()">
-                  <img src="/assets/img/menu.png" alt="botão menu mobile">
+                  <img src="/web-site/assets/img/menu.png" alt="botão menu mobile">
               </button>
 
           </nav>
@@ -224,35 +224,34 @@
         <p>Qualquer inclusão e/ou alteração de usuário somente será aplicada ao app em aproximadamente 30 minutos.</p>
       </section>
 
-      <h2>Sobre os campos do cadastro:</h2>
-
       <section class="topics">
-        <p><b>Login:</b> <span>(obrigatório)</span> Nome de usuário que será utilizado para acessar o Sistema. Precisa ter o mesmo padrão do Sisbr, ou seja: nome + número da cooperativa + _ + número do PA (mínimo 2 dígitos).<br>
+        <h2>Sobre os campos do cadastro:</h2>
+        <p><span class="bold">Login:</span> <span class="red">(obrigatório)</span> Nome de usuário que será utilizado para acessar o Sistema. Precisa ter o mesmo padrão do Sisbr, ou seja: nome + número da cooperativa + _ + número do PA (mínimo 2 dígitos).<br>
         <span class="ex">Exemplo:</span> MariaA123_00, onde 1234 é o número da cooperativa e 00 é o código do PA.</p>
       </section>
 
       <section class="topics">
-        <p><b>Número CPF:</b> <span>(obrigatório)</span> Número do CPF do usuário, somente números. Não é permitido um mesmo CPF para mais de um usuário.</p>
+        <p><span class="bold">Número CPF:</span> <span class="red">(obrigatório)</span> Número do CPF do usuário, somente números. Não é permitido um mesmo CPF para mais de um usuário.</p>
       </section>
 
       <section class="topics">
-        <p><b>Nome:</b> <span>(obrigatório)</span> Nome do usuário.</p>
+        <p><span class="bold">Nome:</span> <span class="red">(obrigatório)</span> Nome do usuário.</p>
       </section>
 
       <section class="topics">
-        <p><b>Função:</b> <span>(obrigatório)</span> Refere-se à função que o usuário ocupa na Cooperativa. Não é obrigatório, mas é utilizado em algumas funcionalidades do sistema, como a Inteligência e, se não informado, o usuário pode não receber as informações da Inteligência.</p>
+        <p><span class="bold">Função:</span> <span class="red">(obrigatório)</span> Refere-se à função que o usuário ocupa na Cooperativa. Não é obrigatório, mas é utilizado em algumas funcionalidades do sistema, como a Inteligência e, se não informado, o usuário pode não receber as informações da Inteligência.</p>
       </section>
 
       <section class="topics">
-        <p><b>E-mail:</b> <span>(obrigatório)</span> endereço de e-mail do usuário. Por esse endereço o Sistema enviará mensagens, caso existam, como por exemplo, mensagens da Inteligência.</p>
+        <p><span class="bold">E-mail:</span> <span class="red">(obrigatório)</span> endereço de e-mail do usuário. Por esse endereço o Sistema enviará mensagens, caso existam, como por exemplo, mensagens da Inteligência.</p>
       </section>
 
       <section class="topics">
-        <p><b>Código pessoa:</b> <span>(obrigatório se a função for de gerente)</span> Código do Cadastro da Pessoas no SISBR.</p>
+        <p><span class="bold">Código pessoa:</span> <span class="red">(obrigatório se a função for de gerente)</span> Código do Cadastro da Pessoas no SISBR.</p>
       </section>
 
       <section class="topics">
-        <p><b>E-mail:</b> Setor da cooperativa no qual o usuário está alocado. Não é obrigatório, mas é utilizado no CRM.</p>
+        <p><span class="bold">E-mail:</span> Setor da cooperativa no qual o usuário está alocado. Não é obrigatório, mas é utilizado no CRM.</p>
       </section>
 
     </article>
@@ -260,49 +259,49 @@
 
   <!-- Rodapé da página -->
   <footer>
-    <div class="container">
-        <div class="image-footer">
-            <a href="index"><img src="/assets/img/logo-rodape.png" alt="Logo branco Navega"></a>
-        </div>
-        <div class="contato-footer">
-            <h5>Central de atendimento<br>ao cliente:</h5>
-            <div class="number-footer">
-                <a href="tel:6135505899" target="_blank"><i class="bi bi-telephone"></i> (61) 3550-5899</a> | <a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank">(38) 99152-9547 <i class="bi bi-whatsapp"></i></a><br>
-                <a href="mailto:navega@navegaconsultoria.com.br">navega@navegaconsultoria.com.br</a>
-            </div>
-        </div>
-        <div class="endereco-footer">
-            <div class="endereco">
-                <div class="maps">
-                    <i class="bi bi-pin-map-fill"></i>
-                </div>
-                <div class="rua">
-                    <a href="https://goo.gl/maps/NLhUu2NgvSKyewd79" target="_blank">Rua Coronel Severiano<br>nº 40 – Araguaia<br>Belo Horizonte-MG</a>
-                </div>
-            </div>
-            <div class="redes-sociais">
-                <ul>
-                    <li><a href="https://www.linkedin.com/company/navega-sistemas/" target="_blank"><img src="/assets/img/linkedin.svg" alt="linkedin"></a></li>
-                    <li><a href="https://www.instagram.com/navegasistemas/" target="_blank"><img src="/assets/img/instagram.svg" alt="instagram"></a></li>
-                    <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/whatsapp.svg" alt="whatsapp"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="termos-uso">
-        <div class="container">
-            <div class="lista-uso">
-                <ul>
-                    <li><a href="institucional" target="_blank">Política de Privacidade</a></li>
-                    <li><a href="politica-cookies" target="_blank">Política de Cookies</a></li>
-                    <li><a href="institucional" target="_blank">Termos de Uso</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+      <div class="container">
+          <div class="image-footer">
+              <a href="index"><img src="/web-site/assets/img/logo-rodape.png" alt="Logo branco Navega"></a>
+          </div>
+          <div class="contato-footer">
+              <h5>Central de atendimento<br>ao cliente:</h5>
+              <div class="number-footer">
+                  <a href="tel:6135505899" target="_blank"><i class="bi bi-telephone"></i> (61) 3550-5899</a> | <a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank">(38) 99152-9547 <i class="bi bi-whatsapp"></i></a><br>
+                  <a href="mailto:navega@navegaconsultoria.com.br">navega@navegaconsultoria.com.br</a>
+              </div>
+          </div>
+          <div class="endereco-footer">
+              <div class="endereco">
+                  <div class="maps">
+                      <i class="bi bi-pin-map-fill"></i>
+                  </div>
+                  <div class="rua">
+                      <a href="https://goo.gl/maps/NLhUu2NgvSKyewd79" target="_blank">Rua Coronel Severiano<br>nº 40 – Araguaia<br>Belo Horizonte-MG</a>
+                  </div>
+              </div>
+              <div class="redes-sociais">
+                  <ul>
+                      <li><a href="https://www.linkedin.com/company/navega-sistemas/" target="_blank"><img src="/web-site/assets/img/linkedin.svg" alt="linkedin"></a></li>
+                      <li><a href="https://www.instagram.com/navegasistemas/" target="_blank"><img src="/web-site/assets/img/instagram.svg" alt="instagram"></a></li>
+                      <li><a href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/web-site/assets/img/whatsapp.svg" alt="whatsapp"></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="termos-uso">
+          <div class="container">
+              <div class="lista-uso">
+                  <ul>
+                      <li><a href="institucional" target="_blank">Política de Privacidade</a></li>
+                      <li><a href="politica-cookies" target="_blank">Política de Cookies</a></li>
+                      <li><a href="institucional" target="_blank">Termos de Uso</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
   </footer>
 
-<!-- Rodapé diureitos reservados e Criador -->
+  <!-- Rodapé diureitos reservados e Criador -->
   <footer class="criador">
       <div class="container">
           <p>© 2023, Navega Sistemas e Consultoria. Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5538998706920&text&type=phone_number&app_absent=0" target="_blank">DevCreator | Tecnologia & Inovação</a></p>
@@ -310,10 +309,10 @@
   </footer>
 
   <!-- Botão whatsapp -->
-  <a class="btn-whatsapp" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/botão-whats.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
-
+  <a class="btn-whatsapp" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/web-site/assets/img/botão-whats.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
+  
   <!-- Botão Whatsapp responsivo -->
-  <a class="btn-whatsapp-mobile" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/assets/img/whatsapp-mobile.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
+  <a class="btn-whatsapp-mobile" href="https://api.whatsapp.com/send/?phone=5538991529547&text&type=phone_number&app_absent=0" target="_blank"><img src="/web-site/assets/img/whatsapp-mobile.png" alt="CLIQUE AQUI PARA ENTRAR EM CONTATO"></a>
   
   <script src="/js/js.js"></script>
 

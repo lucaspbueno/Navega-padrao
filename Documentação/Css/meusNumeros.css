@@ -10,6 +10,14 @@ div.content {
   padding: 0 15px 0 5px;
 }
 
+section.topics h3 {
+  font-size: 30px;
+}
+
+section.topics h3 span.green {
+  color: green;
+}
+
 section.topics p {
   font-size: 20px;
 }
