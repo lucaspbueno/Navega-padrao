@@ -1,0 +1,27 @@
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article h1 {
+  color: black;
+}
+
+div.scroll {
+  margin-right: 25px;
+  margin-top: 5px;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+  padding: 0 15px 0 5px;
+}
+
+table, th, tr, td {
+  border: 1px solid black;
+}
+
+td, th {
+  font-size: 18px;
+  text-align: center;
+  padding: 8px;
+}

@@ -1,0 +1,28 @@
+article h1, h3 {
+  color: black;
+}
+
+div.content {
+  margin-right: 25px;
+  margin-top: 5px;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+  padding: 0 15px 0 5px;
+}
+
+section.topics p {
+  font-size: 20px;
+}
+
+section.sub-topics {
+  margin-top: 20px;
+}
+
+section.last-section {
+  margin-bottom: 20px;
+}
+
+section.sub-topics p span.bold {
+  color: black;
+  font-weight: bold;
+}

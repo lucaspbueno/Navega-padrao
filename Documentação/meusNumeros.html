@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="PT-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/documentacao.css">
     <link href="Css/tailwind.css" rel="stylesheet">
+    <link href="Css/meusNumeros.css" rel="stylesheet">
     
     <!-- Primary Meta Tags -->
     <title>Navega Consultoria – Consultoria em Cooperativas de Crédito</title>
@@ -67,18 +68,26 @@
           <li>
             <details open>
               <summary>
-                <a class="btn-aside" id="0">Gestão</a>
+                <a id="0">Gestão</a>
               </summary>
               <ul>
   
                 <li>
                   <details open>
                     <summary class="mt-8">
-                      <a class="btn-aside">Painel gerencial</a>
+                      <a>Painel gerencial</a>
                     </summary>
                     <ul>
                       <li>
-                        <a href="painelDoGerente.html" class="btn-aside" id="1">Painel do gerente</a>
+                        <details open>
+                          <summary>
+                            <a>Painel do gerente</a>
+                          </summary>
+                          <ul>
+                            <li><a href="contatosRealizadosNoMes.html" id="7">Contatos realizados no mês</a></li>
+                            <li><a href="meusNumeros.html">Meus números</a></li>
+                          </ul>
+                        </details>
                       </li>
                     </ul>
                   </details>
@@ -87,11 +96,11 @@
                 <li>
                   <details>
                     <summary class="mt-8">
-                      <a class="btn-aside">CRM</a>
+                      <a>CRM</a>
                     </summary>
                     <ul>
                       <li>
-                        <a href="painelDeAtendimentoCRM.html" class="btn-aside" id="2">Painel de atendimento CRM</a>
+                        <a href="painelDeAtendimentoCRM.html">Painel de atendimento CRM</a>
                       </li>
                     </ul>
                   </details>
@@ -100,11 +109,11 @@
                 <li>
                   <details>
                     <summary class="mt-8">
-                      <a class="btn-aside">Agenda</a>
+                      <a>Agenda</a>
                     </summary>
                     <ul>
                       <li>
-                        <a href="manutencaoDaAgenda.html" class="btn-aside" id="3">Manutenção da Agenda</a>
+                        <a href="manutencaoDaAgenda.html">Manutenção da Agenda</a>
                       </li>
                     </ul>
                   </details>
@@ -113,11 +122,11 @@
                 <li>
                   <details>
                     <summary class="mt-8">
-                      <a class="btn-aside">Sistemas de Senhas</a>
+                      <a>Sistemas de Senhas</a>
                     </summary>
                     <ul>
                       <li>
-                        <a href="painelDeSenhas.html" class="btn-aside" id="4">Painel de Senhas</a>
+                        <a href="painelDeSenhas.html">Painel de Senhas</a>
                       </li>
                     </ul>
                   </details>
@@ -126,11 +135,11 @@
                 <li>
                   <details>
                     <summary class="mt-8">
-                      <a class="btn-aside">Fluxo de Proposta de Crédito</a>
+                      <a>Fluxo de Proposta de Crédito</a>
                     </summary>
                     <ul>
                       <li>
-                        <a href="painelDeFluxo.html" class="btn-aside" id="5">Painel de fluxo</a>
+                        <a href="painelDeFluxo.html">Painel de fluxo</a>
                       </li>
                     </ul>
                   </details>
@@ -139,11 +148,11 @@
                 <li>
                   <details>
                     <summary class="mt-8">
-                      <a class="btn-aside">Campanhas promocionais</a>
+                      <a>Campanhas promocionais</a>
                     </summary>
                     <ul>
                       <li>
-                        <a href="campanhas.html" class="btn-aside" id="6">Campanhas</a>
+                        <a href="campanhas.html">Campanhas</a>
                       </li>
                     </ul>
                   </details>
@@ -156,23 +165,23 @@
           <li class="mt-6">
             <details>
               <summary>
-                <a class="btn-aside" id="0">Corporativo</a>
+                <a>Corporativo</a>
               </summary>
               <ul>
   
                 <li>
                   <details>
                     <summary class="mt-8">
-                      <a class="btn-aside">Permissões de Acesso</a>
+                      <a>Permissões de Acesso</a>
                     </summary>
                     <ul>
                       <li>
                         <details>
                           <summary>
-                            <a class="btn-aside">Usuários</a>
+                            <a>Usuários</a>
                           </summary>
                           <ul>
-                            <li><a href="incluirEditar.html" class="btn-aside" id="7">Incluir e Editar</a></li>
+                            <li><a href="incluirEditar.html">Incluir e Editar</a></li>
                           </ul>
                         </details>
                       </li>
@@ -183,16 +192,16 @@
                 <li>
                   <details>
                     <summary class="mt-8">
-                      <a class="btn-aside">Integração de Dados</a>
+                      <a>Integração de Dados</a>
                     </summary>
                     <ul>
                       <li>
                         <details>
                           <summary>
-                            <a class="btn-aside">Importação</a>
+                            <a>Importação</a>
                           </summary>
                           <ul>
-                            <li><a href="cancelar.html" class="btn-aside" id="8">Cancelar</a></li>
+                            <li><a href="cancelar.html">Cancelar</a></li>
                           </ul>
                         </details>
                       </li>
@@ -206,10 +215,109 @@
   
         </ul>
       </aside>
-      <article class="bg-white w-full p-8 ">
-        <section class="el-section" id="1">
-          <h1 class="text-6xl text-black">Painel do Gerente</h1>
-        </section>
+      <article class="w-full p-8 ">
+        <h1>Meus números</h1>
+
+        <div class="content">
+
+          <section class="topics">
+            <h3>1: Minhas Operações de Crédito</h3>
+            <section class="sub-topics">
+              <p><span class="bold">Liberadas:</span> considera operações liberadas no intervalo de dias indicado. Não estão incluídas as submodalidades cheque especial, conta garantida e adiantamento a depositante. A submodalidade utilização de limite de cartão de crédito também ficou de fora. A quantidade se refere aos contratos que tiveram pagamento no período e não as parcelas.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Liquidadas:</span> considera liquidações totais e parciais de operações de crédito, exceto nas submodalidades cheque especial, conta garantida e adiantamento a depositante. A submodalidade utilização de limite de cartão de crédito também ficou de fora. A quantidade se refere aos contratos que tiveram pagamento no período e não as parcelas.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Parcial:</span> resultado líquido oriundo da subtração entre liberações e liquidações, exceto nas submodalidades cheque especial, conta garantida e adiantamento a depositante. A submodalidade utilização de limite de cartão de crédito também ficou de fora.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Carteira Total:</span> inclui TODAS as operações de crédito SEM descontar a provisão.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Previsão de Liquidação:</span> considera operações/parcelas a vencer de associados adimplentes (associados sem operações vencidas ou com operações vencidas até 30 dias). Incluso nesta projeção a submodalidade títulos descontados.</p>
+            </section>
+
+            <section class="sub-topics last-section">
+              <p><span class="bold">Carteira Projetada:</span> projeção para o fim do mês, do valor de encerramento da carteira considerado o saldo atual das operações sem descontar a Provisão. Neste caso é deduzido da previsão de liquidação. Se o Gerente não realizar nenhuma nova contratação.</p>
+            </section>
+          </section>
+
+          <section class="topics">
+            <h3>2: Minha Carteira de Captação Remunerada</h3>
+            <section class="sub-topics">
+              <p><span class="bold">Aplicações:</span> novas aplicações e resgates reaplicados em RDC, LCI, LCA e outros que componham os depósitos remunerados da Cooperativa. Não incluso depósito á vista nem aplicações em Poupança. Quantidade considera a quantidade de aplicações realizadas e não quantidade de associados.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Resgates:</span> incluso todos os resgates nas modalidades RDC, LCI, LCA e outros que componham os depósitos remunerados da Cooperativa. Não incluso depósito á vista nem aplicações em Poupança. Quantidade considera a quantidade de resgates realizados e não quantidade de associados.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Parcial:</span> resultado líquido oriundo da subtração entre novas aplicações e novos resgates nas modalidades RDC, LCI, LCA e outros que componham os depósitos remunerados da Cooperativa. Não incluso depósito à vista nem aplicações em Poupança.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Carteira de Captação:</span> carteira atual que considera todas as aplicações ativas nas modalidades RDC, LCI, LCA e outros que componham os depósitos remunerados da Cooperativa. Não incluso depósito à vista nem aplicações em Poupança.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Previsões de Resgate:</span> considera aplicações com data de vencimento durante o mês em curso nas modalidades RDC, LCI, LCA e outros que componham os depósitos remunerados da Cooperativa. Não incluso depósito à vista nem aplicações em Poupança.</p>
+            </section>
+
+            <section class="sub-topics last-section">
+              <p><span class="bold">Captação Projetada:</span> projeção para o fim do mês, do valor de encerramento da carteira de captação considerando o saldo atual das aplicações financeiras descontado os investimentos com prazo de vencimento dentro do mês. São consideradas as modalidades RDC, LCI, LCA e outros que componham os depósitos remunerados da Cooperativa. Não incluso depósito à vista nem aplicações em Poupança.</p>
+            </section>
+          </section>
+
+          <section class="topics">
+            <h3>3: Minha Carteira de Capital Social</h3>
+            <section class="sub-topics">
+              <p><span class="bold">Integralizações:</span> novas integralizações de capital social oriundas de novas associações ou de novos aportes dos cooperados da carteira atual.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Resgates:</span> resgates de capital por conta de critérios estatutários, incluso associados que pediram desligamento,excluídos, demitidos do quadro social e também valores resgatados para cobertura parcial/total de operações inadimplentes.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Parcial:</span> resultado líquido oriundo da subtração entre novos aportes e resgates de capital.</p>
+            </section>
+
+            <section class="sub-topics last-section">
+              <p><span class="bold">Carteira de Capital Social:</span> volume total de capital integralizado pelos cooperados ativos e inativos.</p>
+            </section>
+          </section>
+
+          <section class="topics">
+            <h3>4: Minha Carteira de Cartões de Crédito</h3>
+            <section class="sub-topics">
+              <p><span class="bold">Limite total:</span> considera a quantidade e valor dos limites implantados, somente de contas em estado <span class="bold">operativo.</span></p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Utilizado total:</span> considera a quantidade e valor utilizado dos limites, somente de contas em estado <span class="bold">operativo.</span></p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Disponível total:</span> valor dos limites disponíveis de cartões de crédito, oriundo da subtração entre limite total e utilizado total.</p>
+            </section>
+
+            <section class="sub-topics">
+              <p><span class="bold">Novos limites implantados:</span> considera os limites implantados desde o início do mês, utilizando como referência a data de abertura da conta cartão.</p>
+            </section>
+
+            <section class="sub-topics last-section">
+              <p><span class="bold">Saldos em atraso:</span> saldos em atraso dos cartões. Os valores têm como base os arquivos de cartões em atraso.</p>
+            </section>
+          </section>
+
+        </div>
+
       </article>
     </main>
 
