@@ -32,13 +32,3 @@ window.addEventListener('DOMContentLoaded', function() {
     document.getElementById('balloon').style.display = 'none';
   }
 });
-
-
-const test = document.getElementById(10);
-console.log(test);
-
-test.setAttribute('open', '');
-console.log(test);
-
-/* test.removeAttribute('open');
-console.log(test); */
